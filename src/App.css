@@ -1,0 +1,334 @@
+
+.moviecard {
+  width: 20;
+  display: flex;
+  gap: 16px;
+}
+
+.Navbar {
+  color: tomato!important;
+}
+.vl {
+  border-left: 6px solid green;
+  height: 500px;
+  position: relative; 
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto; 
+  top: 0;
+}
+.similarmovie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 17%;
+}
+
+.similarcard {
+  margin: 10px;
+  flex: 1 1 22%; 
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); 
+  min-width: 130px; 
+}
+.similarcard img {
+  width: 80%;
+}
+
+.Allreview {
+  margin-top: -19%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media(min-width:360px) {
+  .loginpart {
+    margin-top: -90%;
+    padding: 10px;
+  }
+  
+  .loginpart2{
+    margin-top: -110%;
+  }
+  .form2{
+    margin-top: -19%;
+    margin-left: -7%;
+  }
+  .form {
+    margin-top: 9%;
+    margin-left: -9%;
+    width: 30%;
+  }
+  .error{
+    color: red;
+    margin-left: 185%;
+    font-size: 0.7rem;
+    width: max-content;
+  }
+ 
+  h2.heading {
+    font-size: 1.2rem;
+    margin-top: 2% !important;
+    font-family: monospace;
+  }
+  h2.headings{
+    font-size: 1.2rem;
+    margin-top: 2% !important;
+    font-family: monospace;
+    margin-left: -12%;
+  }
+  .totaldiv {
+    margin-top: -95%;
+    width: 100%;
+  }
+  .iconsdiv {
+    margin-left: -14%;
+  }
+  
+  .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiCard-root.css-56sxh3-MuiPaper-root-MuiCard-root{
+    width: 100%;
+    margin-left: 20%;
+   margin-top: -192%;
+  }
+  .MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.reviewbtn.css-i57dho-MuiButtonBase-root-MuiButton-root{
+    margin-top: 5%;
+  }
+  .MuiTypography-root.MuiTypography-h5.css-16xl4zq-MuiTypography-root{
+    font-size: 1rem;
+    margin-left: 1%;
+  }
+  .MuiTypography-root.MuiTypography-h5.css-16xl4zq-MuiTypography-root{
+    margin-left: 10%;
+  }
+  .reviewdiv {
+    margin-left: 17%;
+    width: 100%;
+    margin-top: -220%;
+  }
+  .Alldiv {
+    margin-left: 7%;
+    margin-top: -79%;
+    width: 100%;
+  }
+   i {
+    margin-top: -14%;
+  }
+  .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-18.css-1i2jdp9-MuiGrid-root{
+    margin-left: -1%;
+  }
+  .club {
+    margin-top: 3%;
+    margin-left: 102% !important;
+    font-size: 0.5rem;
+    width: 110%;
+  }
+  .club2 {
+    margin-left: 25%;
+    margin-top: 3%;
+  }
+ 
+}
+
+@media(min-width:700px) {
+  .loginpart2{
+    margin-top: -70%;
+  }
+  .form2{
+    margin-top: -19%;
+    margin-left: 1%;
+  }
+  .MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.signupbtn.css-1aafm5p-MuiButtonBase-root-MuiButton-root {
+    margin-left: 29%;
+  }
+  h2.heading {
+    font-size: 1.5rem;
+    font-family: monospace;
+  }
+  .totaldiv {
+    margin-top: -49%;
+  }
+  .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-18.nowplaying.css-1i2jdp9-MuiGrid-root {
+    margin-left: 9%;
+  }
+  .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-18.popularmovies.css-1i2jdp9-MuiGrid-root {
+    margin-left: 9%;
+  }
+  .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-18.upcomming.css-1i2jdp9-MuiGrid-root {
+    margin-left: 9%;
+  }
+  .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-18.toprated.css-1i2jdp9-MuiGrid-root {
+    margin-left: 9%;
+  }
+  .iconsdiv {
+    margin-left: -2%;
+  }
+  h2.headings {
+    font-family: monospace;
+    font-size: 1.5rem;
+    margin-left: -4%;
+  }
+  .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiCard-root.css-56sxh3-MuiPaper-root-MuiCard-root{
+    width: 100%;
+    margin-left: 29%;
+   margin-top: -92%;
+  }
+  .MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.reviewbtn.css-i57dho-MuiButtonBase-root-MuiButton-root{
+    margin-top: 5%;
+    margin-left: 39%;
+  }
+  .MuiTypography-root.MuiTypography-h5.css-16xl4zq-MuiTypography-root{
+    font-size: 1.5rem;
+    margin-left: 12%;
+    font-weight: bold;
+  }
+  .reviewdiv {
+    margin-left: 17%;
+    width: 100%;
+    margin-top: -125%;
+  }
+  .similarmovie{
+    margin-left: 29%;
+  }
+  .Alldiv {
+    margin-left: 7%;
+    margin-top: -27%;
+  }
+   i {
+    margin-top: -10%;
+  }
+  .loginpart {
+    margin-top: -50%;
+    padding: 10px;
+  }
+  .form {
+    margin-top: 9%;
+    margin-left: 9%;
+    width: 60%;
+  }
+  .error{
+    color: red;
+    margin-left: 55%;
+    width: 100%;
+    font-size: 0.7rem;
+  }
+  .MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.css-1aafm5p-MuiButtonBase-root-MuiButton-root {
+    margin-left: 49%;
+  }
+  .MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.signupbtn.css-1aafm5p-MuiButtonBase-root-MuiButton-root {
+    margin-left: 29%;
+    width: 30%;
+  }
+  .club {
+    margin-top: 3%;
+    font-size: 1rem;
+    margin-left: 42% !important;
+  }
+  img.loginImg {
+    margin-left: 5% !important;
+  }
+
+}
+
+@media(min-width: 1200px) {
+  .loginpart2{
+    margin-top: -25%;
+  }
+  .form2{
+    margin-top: -9%;
+    margin-left: 14%;
+  }
+  .iconsdiv {
+    margin-left: 1%;
+  }
+  .totaldiv {
+    margin-top: -25%;
+  }
+  h2.heading {
+    margin-left: 9%;
+  }
+  h2.headings {
+    font-family: monospace;
+    font-size: 1.5rem;
+    margin-left: -1%;
+  }
+  .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-18.popularmovies.css-1i2jdp9-MuiGrid-root {
+    margin-left: 14%;
+  }
+  .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-18.upcomming.css-1i2jdp9-MuiGrid-root {
+    margin-left: 14%;
+  }
+  .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-18.toprated.css-1i2jdp9-MuiGrid-root {
+    margin-left: 14%;
+  }
+  .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiCard-root.css-56sxh3-MuiPaper-root-MuiCard-root{
+    margin-left: 35%;
+   margin-top: -44%;
+  }
+  .MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.reviewbtn.css-i57dho-MuiButtonBase-root-MuiButton-root{
+    margin-top: 5%;
+    margin-left: 45%;
+  }
+  .MuiTypography-root.MuiTypography-h5.css-16xl4zq-MuiTypography-root{
+    font-size: 1.5rem;
+    margin-left: 12%;
+    font-weight: bold;
+  }
+  .reviewdiv {
+    margin-left: 1%;
+    width: 90%;
+    margin-top: -65%;
+  }
+  .similarmovie{
+    margin-left: 29%;
+  }
+  .myreview {
+    margin-left: 10%;
+  }
+  .Alldiv {
+    margin-top: 3%;
+    margin-left: 12%;
+  }
+  i {
+    font-size: 1.4rem;
+  }
+  .loginpart {
+    margin-top: -20%;
+    padding: 5px;
+  }
+  .form {
+    margin-top: 16% !important;
+    margin-left: 9%;
+    width: 60%;
+  }
+  .error{
+    color: red;
+    margin-left: 49%;
+    width: 100%;
+    font-size: 0.7rem;
+  }
+  img.loginimg {
+    margin-left: 19% !important;
+  }
+  .MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.css-1aafm5p-MuiButtonBase-root-MuiButton-root {
+    margin-left: 46%;
+  }
+  .MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.signupbtn.css-1aafm5p-MuiButtonBase-root-MuiButton-root {
+    margin-left: 25%;
+    width: 30%;
+  }
+  img.loginImg {
+    margin-left: 29% !important;
+    margin-top: 5% !important;
+    width: 50%;
+  }
+  .club{
+    margin-top: 3%;
+    margin-left: 45% !important;
+  }
+  .line{
+    margin-left: -5% !important;
+  }
+  
+
+}
