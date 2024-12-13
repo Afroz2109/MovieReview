@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from "../Firebase";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
 import Stack from "@mui/material/Stack";
@@ -11,16 +11,20 @@ import LoginImg from "../assets/Login.png";
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [name, setName] = useState(""); 
-  const [error, setError] = useState(""); 
+  const [name, setName] = useState("");
+  const [error, setError] = useState("");
+
+  const navigate = useNavigate(); 
 
   const handleRegister = async () => {
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-            return updateProfile(user, {displayName: name})
+      const user = userCredential.user;
+      await updateProfile(user, { displayName: name }); 
       console.log("User registered:", userCredential);
+      navigate("/home");
     } catch (err) {
-      setError(err.message); 
+      setError(err.message);
     }
   };
 
@@ -52,7 +56,7 @@ const Signup = () => {
                   label="Name"
                   variant="outlined"
                   value={name}
-                  onChange={(e) => setName(e.target.value)} 
+                  onChange={(e) => setName(e.target.value)}
                   fullWidth
                 />
                 <TextField
@@ -60,7 +64,7 @@ const Signup = () => {
                   label="Email"
                   variant="outlined"
                   value={email}
-                  onChange={(e) => setEmail(e.target.value)} 
+                  onChange={(e) => setEmail(e.target.value)}
                   fullWidth
                 />
                 <TextField
@@ -69,15 +73,15 @@ const Signup = () => {
                   type="password"
                   variant="outlined"
                   value={password}
-                  onChange={(e) => setPassword(e.target.value)} 
+                  onChange={(e) => setPassword(e.target.value)}
                   fullWidth
                 />
               </Stack>
-              {error && <p className="error">{error}</p>} 
+              {error && <p className="error">{error}</p>}
               <Button
                 variant="contained"
                 color="primary"
-                onClick={handleRegister} 
+                onClick={handleRegister}
                 sx={{ marginTop: 2, marginLeft: 18, width: "50%" }}
               >
                 Signup
