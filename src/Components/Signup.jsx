@@ -17,6 +17,7 @@ const Signup = () => {
   const handleRegister = async () => {
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+            return updateProfile(user, {displayName: name})
       console.log("User registered:", userCredential);
     } catch (err) {
       setError(err.message); 
