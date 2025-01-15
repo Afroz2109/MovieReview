@@ -85,7 +85,7 @@ function App() {
           <Grid item xs={1}>
             <HomeIcon
               className='homeicon'
-              onClick={() => navigate('/')}
+              onClick={() => navigate('/home')}
               sx={{ width: 90, height: 50, color: 'blue', cursor: 'pointer' }}
             />
           </Grid>
