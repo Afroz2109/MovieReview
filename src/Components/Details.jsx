@@ -155,7 +155,7 @@ const Details = () => {
           marginTop: "20px",
           backgroundColor: "tomato",
           color: "white",
-          ml: "25%",
+          ml: "33%",
           mt: "2%",
         }}
       >
