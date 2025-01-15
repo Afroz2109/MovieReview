@@ -118,7 +118,7 @@ function App() {
         </Grid>
       </div>
       <Routes>
-        <Route path="/" element={isLoggedIn ? <Home /> : <Navigate to="/login" />} />
+        <Route path="/home" element={isLoggedIn ? <Home /> : <Navigate to="/login" />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/details" element={<Details />}/>
