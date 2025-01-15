@@ -14,15 +14,18 @@ const Signup = () => {
   const [name, setName] = useState("");
   const [error, setError] = useState("");
 
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const handleRegister = async () => {
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
-      await updateProfile(user, { displayName: name }); 
+      await updateProfile(user, { displayName: name });
+
+      localStorage.setItem("userName", name);
+
       console.log("User registered:", userCredential);
-      navigate("/home");
+      navigate("/login");
     } catch (err) {
       setError(err.message);
     }
